@@ -1,6 +1,6 @@
 /*General*/
 body * {
-    font-family: "Montserrat", sans-serif, "黑体";
+    font-family: "Montserrat", Verdana, Helvetica, sans-serif, "黑体"; !"Lato"
   }
 
   
@@ -16,9 +16,39 @@ body * {
   h3,
   h4 {
     font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
   }
   
+  h1 {
+      font-size: 28px;
+      margin-top: 8px;
+  }
+
+  h2 {
+    font-size: 22px;
+    margin-top: 8px;
+  }
+
+  h3 {
+      font-size: 18px;
+      margin-top: 8px;
+  }
+
+  h4 {
+      font-size: 14px;
+      margin-top: 8px;
+  }
+
+  p {
+    font-size: 14px;
+    margin-top: 8px;
+  }
+
+
   ul li {
+    font-size: 14px;
     border: none !important;
   }
   
@@ -32,7 +62,7 @@ body * {
     color: #f09228;
     text-decoration: none;
   }
-  
+
   /*Containers*/
   
   .image-section {
@@ -94,13 +124,13 @@ body * {
   }
   
   .w3-ul li {
-    padding: 8px 0px;
+    padding: 3px 0px;
   }
   
   /*Utilities*/
   
   .w3-margin-top-2 {
-    margin-top: 32px;
+    margin-top: 16px;
   }
   
   .w3-margin-top-4 {
@@ -108,7 +138,7 @@ body * {
   }
   
   .w3-margin-top-20-percent {
-    margin-top: 20%;
+    margin-top: 5%;
   }
   
   .w3-sticky {
