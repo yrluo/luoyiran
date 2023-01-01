@@ -1,7 +1,8 @@
 /*General*/
 body * {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", Verdana, Helvetica, sans-serif, "黑体"; !"Lato"
   }
+
   
   html,
   body {
@@ -15,12 +16,53 @@ body * {
   h3,
   h4 {
     font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
   }
   
+  h1 {
+      font-size: 28px;
+      margin-top: 8px;
+  }
+
+  h2 {
+    font-size: 22px;
+    margin-top: 8px;
+  }
+
+  h3 {
+      font-size: 18px;
+      margin-top: 8px;
+  }
+
+  h4 {
+      font-size: 14px;
+      margin-top: 8px;
+  }
+
+  p {
+    font-size: 14px;
+    margin-top: 8px;
+  }
+
+
   ul li {
+    font-size: 14px;
     border: none !important;
   }
   
+  a {
+    color: #1772d0;
+    text-decoration: none;
+  }
+
+  a:focus,
+  a:hover {
+    color: #f09228;
+    text-decoration: none;
+  }
+
   /*Containers*/
   
   .image-section {
@@ -36,8 +78,8 @@ body * {
   }
   
   .image-section img {
-    max-width: 45%;
-    max-height: 45%;
+    max-width: 60%;
+    max-height: 60%;
     margin-top: 15px !important;
     object-fit: cover;
   }
@@ -73,7 +115,7 @@ body * {
   }
   
   .home h1 {
-    font-size: 64px;
+    font-size: 48px;
   }
   
   .html {
@@ -82,13 +124,13 @@ body * {
   }
   
   .w3-ul li {
-    padding: 8px 0px;
+    padding: 4px 0px;
   }
   
   /*Utilities*/
   
   .w3-margin-top-2 {
-    margin-top: 32px;
+    margin-top: 16px;
   }
   
   .w3-margin-top-4 {
@@ -96,7 +138,7 @@ body * {
   }
   
   .w3-margin-top-20-percent {
-    margin-top: 20%;
+    margin-top: 5%;
   }
   
   .w3-sticky {
