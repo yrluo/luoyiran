@@ -25,55 +25,64 @@
 </head>
 
 <body class="w3-content" style="max-width:1000px">
-    <section>
-        <!-- Sidebar/menu -->
-        <nav class="w3-sidebar w3-bar-block w3-black w3-collapse w3-top w3-right" style="z-index:3;width:180px" id="mySidebar">
-            <div class="w3-bar-item w3-padding-24 w3-text-sand w3-center" style="font-size: 24px">
-                YIRAN
-            </div>
-            <!-- MOBILE NAVIGATION -->
-            <div class="w3-padding-24 w3-container w3-border-none">
-                <div class="w3-bar-block w3-black w3-border-none" style="font-weight:bold">
-                    <a href="index.html" class="w3-bar-item w3-button w3-center w3-hover-none w3-hover-text-amber w3-text-white">HOME</a>
-                    <div class="w3-sidebar w3-bar-block w3-text-black w3-hover-none w3-top" style="width:8%;height:50%;right:10%" id="my2ndSidebar">
-                        <h5 class="w3-bar-item w3-center w3-margin-top-2">
-                            Research
-                        </h5>
-                        <a href="#preface" class="w3-bar-item w3-margin-top-0 w3-center w3-text-black w3-hover-text-amber" style="font-size: 80%; font-weight: lighter;" id='prefaceNav'>
-                            Preface
-                        </a>
-                        <a href="#srgnsssp" class="w3-bar-item w3-margin-top-0 w3-center w3-text-black w3-hover-text-amber" style="font-size: 80%; font-weight: lighter;" id='srgnssspNav'>
-                            S-Resolution
-                        </a>
-                        <a href="#agnssrd" class="w3-bar-item w3-margin-top-0 w3-center w3-text-black w3-hover-text-amber" style="font-size: 80%; font-weight: lighter;" id='agnssrdNav'>
-                            Receiver
-                        </a>
-                        <a href="#navPosInHarEn" class="w3-bar-item w3-margin-top-0 w3-center w3-text-black w3-hover-text-amber" style="font-size: 80%; font-weight: lighter;" id='navPosInHarEnNav'>
-                            Nav&Pos
-                        </a>
+    <!-- scroll-to-top button section -->
+    <button onclick="topFunction()" id="my-scrTop-Btn" title="Go to top">Top</button>
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-collapse w3-top w3-right" style="z-index:3;width:180px" id="mySidebar">
+        <div class="w3-bar-item w3-padding-24 w3-text-sand w3-center" style="font-size: 24px">
+            YIRAN
+        </div>
+        <!-- MOBILE NAVIGATION -->
+        <div class="w3-padding-24 w3-container w3-border-none">
+            <div class="w3-bar-block w3-black w3-border-none" style="font-weight:bold">
+                <a href="index.html">
+                    <div class="my-animated-bt">
+                        <span>
+                            HOME
+                        </span>
                     </div>
-                    <a href="research.html">
-                        <button onclick="loadAccordion('Demo1')" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-sand w3-hover-border-amber w3-hover-text-amber w3-text-white">
-                            RESEARCH
-                        </button>
+                </a>
+                <div class="w3-sidebar w3-bar-block w3-text-black w3-hover-none" style="width:8%;height:50%;right:10%" id="my2ndSidebar">
+                    <h5 class="w3-bar-item w3-center w3-margin-top-2">
+                        Research
+                    </h5>
+                    <a href="#preface" class="w3-bar-item w3-margin-top-0 w3-center w3-text-black w3-hover-text-amber" style="font-size: 80%; font-weight: lighter;" id='prefaceNav'>
+                        Preface
                     </a>
-                    <a href="resume.html">
-                        <button onclick="loadAccordion('Demo2')" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-sand w3-hover-border-amber w3-hover-text-amber w3-text-white">
-                            RESUME
-                        </button>
+                    <a href="#srgnsssp" class="w3-bar-item w3-margin-top-0 w3-center w3-text-black w3-hover-text-amber" style="font-size: 80%; font-weight: lighter;" id='srgnssspNav'>
+                        S-Resolution
+                    </a>
+                    <a href="#agnssrd" class="w3-bar-item w3-margin-top-0 w3-center w3-text-black w3-hover-text-amber" style="font-size: 80%; font-weight: lighter;" id='agnssrdNav'>
+                        Receiver
+                    </a>
+                    <a href="#navPosInHarEn" class="w3-bar-item w3-margin-top-0 w3-center w3-text-black w3-hover-text-amber" style="font-size: 80%; font-weight: lighter;" id='navPosInHarEnNav'>
+                        Nav&Pos
                     </a>
                 </div>
+                <a href="#research">
+                    <div class="my-animated-bt"><span>RESEARCH</span></div>
+                    <!-- <button onclick="loadAccordion('Demo1')" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-sand w3-hover-border-amber w3-hover-text-amber w3-text-white">
+                        RESEARCH
+                    </button> -->
+                </a>
+                <a href="resume.html">
+                    <div class="my-animated-bt"><span>RESUME</span></div>
+                    <!-- <button onclick="loadAccordion('Demo2')" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-sand w3-hover-border-amber w3-hover-text-amber w3-text-white">
+                        RESUME
+                    </button> -->
+                </a>
             </div>
-            <!--END Sidebar/menu -->
-        </nav>
-        <!-- Top menu on small screens -->
-        <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
-            <div class="w3-bar-item w3-text-sand w3-padding-24">YIRAN</div>
-            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" style="font-stretch: extra-expanded;" onclick="w3_open()"><b>≡</b></a>
-            </div>
-        </header>
-        <!-- Overlay effect when opening sidebar on small screens -->
-        <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+        </div>
+        <!--END Sidebar/menu -->
+    </nav>
+    <!-- Top menu on small screens -->
+    <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+        <div class="w3-bar-item w3-text-sand w3-padding-24">YIRAN</div>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" style="font-stretch: extra-expanded;" onclick="w3_open()"><b>≡</b></a>
+        </div>
+    </header>
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
     </section>
     <section>
         <!--MAIN CONTENTS-->
@@ -134,8 +143,8 @@
                 <!--FOOTER-->
                 <!-- Previous and Next Buttons -->
                 <footer class="w3-container w3-border-none w3-center w3-margin-top-4 w3-none w3-border-sand">
-                    <a href="index.html" class="previous w3-hover-text-amber" style="margin-right:290px; width:150px; font-size: 18px; font-weight: bold;">&laquo; Home</a>
-                    <a href="resume.html" class="next w3-hover-text-amber" style="margin-left:290px; width:150px; font-size: 18px; font-weight: bold;">Resume &raquo;</a>
+                    <a href="index.html" class="previous my-bt" style="margin-right:0px; width:150px; font-size: 16px; font-weight: light">&laquo; Home</a>
+                    <a href="resume.html" class="next my-bt" style="margin-left:0px; width:150px; font-size: 16px; font-weight: light;">Resume &raquo;</a>
                 </footer>
                 <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
                 <footer class="w3-container w3-border-top w3-center w3-margin-top-none w3-sand w3-border-sand w3-text-grey">
@@ -143,49 +152,86 @@
                 </footer>
             </div>
         </div>
-    </section>
-    <script>
-    // Function to toggle mobile navigation
-    function toggleNavigation() {
-        let nav = document.getElementById("mobile-nav");
-        if (nav.classList.contains('w3-show')) {
-            nav.classList.remove('w3-show');
-        } else {
-            nav.classList.add('w3-show');
+        <!-- </section> -->
+        <!---------------- Script section -------------------->
+        <script>
+            // scroll 2 sticky navigator bar
+            var navbar = document.getElementById("my2ndSidebar");
+            var sticky = navbar.offsetTop;
+        </script>
+        <script type="">
+            /*----------- Scroll to top button function --------------*/
+        // Get the button
+        let myScro2TopBt = document.getElementById("my-scrTop-Btn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() { scrollFunction() };
+
+        function scrollFunction() {
+
+            /*------ scroll 2 sticky nav bar -------*/
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+
+            /*------ scroll 2 top -------*/
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                myScro2TopBt.style.display = "block";
+            } else {
+                myScro2TopBt.style.display = "none";
+            }
         }
-    }
-    </script>
-    <script>
-    // Script to load feather icons
-    feather.replace()
-    </script>
-    <script>
-    // Script to load accordion navigation
-    function loadAccordion(id) {
-        var x = document.getElementById(id);
-        if (x.className.indexOf("w3-show") == -1) {
-            x.className += " w3-show";
-        } else {
-            x.className = x.className.replace(" w3-show", "");
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
         }
-    }
-    // Open and close sidebar
-    function w3_open() {
-        document.getElementById("mySidebar").style.display = "block";
-        document.getElementById("myOverlay").style.display = "block";
+        </script>
+        <script>
+        // Function to toggle mobile navigation
+        function toggleNavigation() {
+            let nav = document.getElementById("mobile-nav");
+            if (nav.classList.contains('w3-show')) {
+                nav.classList.remove('w3-show');
+            } else {
+                nav.classList.add('w3-show');
+            }
+        }
+        </script>
+        <script>
+        // Script to load feather icons
+        feather.replace()
+        </script>
+        <script>
+        // Script to load accordion navigation
+        function loadAccordion(id) {
+            var x = document.getElementById(id);
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+        // Open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
 
-        // avoid the 2nd navigation bar
-        document.getElementById("my2ndSidebar").style.display = "none";
-    }
+            // avoid the 2nd navigation bar
+            document.getElementById("my2ndSidebar").style.display = "none";
+        }
 
-    function w3_close() {
-        document.getElementById("mySidebar").style.display = "none";
-        document.getElementById("myOverlay").style.display = "none";
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
 
-        // avoid the 2nd navigation bar
-        document.getElementById("my2ndSidebar").style.display = "block";
-    }
-    </script>
+            // avoid the 2nd navigation bar
+            document.getElementById("my2ndSidebar").style.display = "block";
+        }
+        </script>
 </body>
 
 </html>
