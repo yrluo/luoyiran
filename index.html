@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="styles.css" />
     <script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
     <style>
-    /*.progress-container {
+        /*.progress-container {
         width: 100%;
         height: 8px;
         background: #ccc;
@@ -37,48 +37,51 @@
 </head>
 
 <body class="w3-content" style="max-width:1000px">
+    <!-- scroll-to-top button section -->
+    <button onclick="topFunction()" id="my-scrTop-Btn" title="Go to top">Top</button>
     <!-- <div class="barHeader">
         <h2>Scroll Indicator</h2>
         <div class="progress-container">
             <div class="progress-bar" id="myBar"></div>
         </div>
     </div> -->
-    <section>
-        <!-- SOCIAL SECTION -->
-        <!-- <section class="image-section w3-quarter w3-fixed w3-padding-small"> -->
-        <!-- Sidebar/menu -->
-        <nav class="w3-sidebar w3-bar-block w3-black w3-collapse w3-top w3-right" style="z-index:3;width:180px" id="mySidebar">
-            <div class="w3-bar-item w3-padding-24 w3-text-sand w3-center" style="font-size: 24px">
-                YIRAN
-            </div>
-            <!--CV DOWNLOAD BUTTON-->
-            <!--<div class="w3-container w3-padding-16">
+    <!-- <section> -->
+    <!-- SOCIAL SECTION -->
+    <!-- <section class="image-section w3-quarter w3-fixed w3-padding-small"> -->
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-collapse w3-top w3-right" style="z-index:3;width:180px" id="mySidebar">
+        <div class="w3-bar-item w3-padding-24 w3-text-sand w3-center" style="font-size: 24px">
+            YIRAN
+        </div>
+        <!--CV DOWNLOAD BUTTON-->
+        <!--<div class="w3-container w3-padding-16">
           <a href="./resume.pdf" class="w3-amber w3-hover-amber w3-button w3-round-small w3-hover-deep-orange w3-padding-large" target="_blank" download="resume.pdf">
             <i data-feather="arrow-down" style="vertical-align: -0.35em;"></i>
             <span class="w3-margin-left download-text">DOWNLOAD CV</span>
           </a>
         </div>-->
-            <!-- MOBILE NAVIGATION -->
-            <div class="w3-padding-24 w3-container w3-border-none">
-                <div class="w3-bar-block w3-black w3-border-none" style="font-weight:bold">
-                    <a href="#home" class="w3-bar-item w3-button w3-center w3-hover-none w3-hover-text-amber w3-text-white">HOME</a>
-                    <div class="w3-sidebar w3-bar-block w3-text-black w3-hover-none w3-top" style="width:8%;height:30%;right:10%" id="my2ndSidebar">
-                        <h5 class="w3-bar-item w3-center">
-                            Home
-                        </h5>
-                        <a href="#home" class="w3-bar-item w3-margin-top-0 w3-center w3-text-black w3-hover-text-amber" style="font-size: 80%; font-weight: lighter;" id='nameNav'>
-                            Yiran Luo
-                        </a>
-                        <a href="#contact" class="w3-bar-item w3-margin-top-0 w3-center w3-text-black w3-hover-text-amber" style="font-size: 80%; font-weight: lighter;" id='contactNav'>
-                            Contact
-                        </a>
-                    </div>
-                    <a href="research.html">
-                        <button onclick="loadAccordion('Demo1')" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-sand w3-hover-border-amber w3-hover-text-amber w3-text-white">
-                            RESEARCH
-                        </button>
+        <!-- MOBILE NAVIGATION -->
+        <div class="w3-padding-24 w3-container w3-border-none">
+            <div class="w3-bar-block w3-black w3-border-none" style="font-weight:bold">
+                <div href="#home" class="my-animated-bt"><span>HOME</span></div>
+                <div class="w3-sidebar w3-bar-block w3-text-black" style="width:8%;height:30%;right:10%" id="my2ndSidebar">
+                    <h5 class="w3-bar-item w3-center">
+                        Home
+                    </h5>
+                    <a href="#home" class="w3-bar-item w3-margin-top-0 w3-center w3-text-black w3-hover-text-amber" style="font-size: 80%; font-weight: lighter;" id='nameNav'>
+                        Yiran Luo
                     </a>
-                    <!-- <div id="Demo1" class="w3-hide">
+                    <a href="#contact" class="w3-bar-item w3-margin-top-0 w3-center w3-text-black w3-hover-text-amber" style="font-size: 80%; font-weight: lighter;" id='contactNav'>
+                        Contact
+                    </a>
+                </div>
+                <a href="research.html">
+                    <div class="my-animated-bt"><span>RESEARCH</span></div>
+                    <!-- <button onclick="loadAccordion('Demo1')" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-sand w3-hover-border-amber w3-hover-text-amber w3-text-white">
+                        RESEARCH
+                    </button> -->
+                </a>
+                <!-- <div id="Demo1" class="w3-hide">
                         <a class="w3-button w3-center w3-bar-item" style="font-size: 12px" href="research.html#preface">
                             Preface
                         </a>
@@ -92,12 +95,13 @@
                             Navigation and Positioning in Harsh Environments
                         </a>
                     </div> -->
-                    <a href="resume.html">
-                        <button onclick="loadAccordion('Demo2')" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-sand w3-hover-border-amber w3-hover-text-amber w3-text-white">
-                            RESUME
-                        </button>
-                    </a>
-                    <!-- <div id="Demo2" class="w3-hide">
+                <a href="resume.html">
+                    <div class="my-animated-bt"><span>RESUME</span></div>
+                    <!-- <button onclick="loadAccordion('Demo2')" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-sand w3-hover-border-amber w3-hover-text-amber w3-text-white">
+                        RESUME
+                    </button> -->
+                </a>
+                <!-- <div id="Demo2" class="w3-hide">
                         <a class="w3-button w3-center w3-bar-item" style="font-size: 12px" href="resume.html#employment">Academic Positions</a>
                         <a class="w3-button w3-bar-item w3-center" style="font-size: 12px" href="resume.html#education">Academic Qualifications</a>
                         <a class="w3-button w3-bar-item w3-center" style="font-size: 12px" href="resume.html#professionalExp">Professional Experience and Teaching</a>
@@ -110,96 +114,96 @@
                         <a class="w3-button w3-bar-item w3-center" style="font-size: 12px" href="resume.html#socialWork">Social Work</a>
                         <a class="w3-button w3-bar-item w3-center" style="font-size: 12px" href="resume.html#skills">Skills</a>
                     </div> -->
-                    <!-- <a href="videos.html" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">
+                <!-- <a href="videos.html" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">
               VIDEOS
             </a>
 
             <a href="#contact" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">
               CONTACT
             </a> -->
-                </div>
             </div>
-            <!--END SOCIAL SECTION -->
-            <!-- </section> -->
-            <!--END Sidebar/menu -->
-        </nav>
-        <!-- Top menu on small screens -->
-        <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
-            <div class="w3-bar-item w3-text-sand w3-padding-24">YIRAN</div>
-            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" style="font-stretch: extra-expanded;" onclick="w3_open()"><b>≡</b></a>
-            </div>
-        </header>
-        <!-- Overlay effect when opening sidebar on small screens -->
-        <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-        <!-- CV CONTENT SECTION -->
-        <!-- <section class="w3-threequarter w3-padding-large w3-right"> -->
-        <div class="w3-main" style="margin-left:180px">
-            <!--HOME SECTION-->
-            <div id="home" class="w3-container w3-margin-top-4 w3-cursive">
-                <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                    <tbody>
-                        <tr style="padding:0px">
-                            <td style="padding:2.5%;width:58%;vertical-align:middle">
-                                <p style="text-align:center">
-                                    <h1>Yiran Luo (罗怡然), Ph.D.</h1>
-                                    <!-- <h3>Ph.D.</h3>
+        </div>
+        <!--END SOCIAL SECTION -->
+        <!-- </section> -->
+        <!--END Sidebar/menu -->
+    </nav>
+    <!-- Top menu on small screens -->
+    <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+        <div class="w3-bar-item w3-text-sand w3-padding-24">YIRAN</div>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" style="font-stretch: extra-expanded;" onclick="w3_open()"><b>≡</b></a>
+        </div>
+    </header>
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+    <!-- CV CONTENT SECTION -->
+    <!-- <section class="w3-threequarter w3-padding-large w3-right"> -->
+    <div class="w3-main" style="margin-left:180px">
+        <!--HOME SECTION-->
+        <div id="home" class="w3-container w3-margin-top-4 w3-cursive">
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+                    <tr style="padding:0px">
+                        <td style="padding:2.5%;width:58%;vertical-align:middle">
+                            <p style="text-align:center">
+                                <h1>Yiran Luo (罗怡然), Ph.D.</h1>
+                                <!-- <h3>Ph.D.</h3>
                       <h3>Postdoctoral Associate</h3>
                       <h3>Department of Geomatics Engineering, University of Calgary, Calgary, Canada</h3> -->
-                                </p>
+                            </p>
+                            <p class="w3-margin-top-2">
+                                I am currently a Postdoctoral Associate at the <a href="https://live-ucalgary.ucalgary.ca/research/mms-geomatics/home-mmss" class="">Mobile Multi-Sensors Systems (MMSS) Research Team</a>, the Department of Geomatics Engineering, <a href="https://www.ucalgary.ca/" class="">University of Calgary (UofC)</a>, <a href="https://en.wikipedia.org/wiki/Calgary">Calgary</a>, Canada, where I received the Ph.D. degree in 2020; I also obtained the Ph.D. degree with the School of Information and Electronics, <a href="https://english.bit.edu.cn/" class="">Beijing Institute of Technology (BIT)</a>, <a href="https://en.wikipedia.org/wiki/Beijing">Beijing</a>, China, in the same year. After that, I was a Postdoctoral Fellow at the <a href="https://www.polyu-ipn-lab.com/" class="">
+                                    Intelligent Positioning and Navigation Laboratory (IPNL)</a> of the Department of Aeronautical and Aviation Engineering, <a href="https://www.polyu.edu.hk/en/" class="">The Hong Kong Polytechnic University (PolyU)</a>, <a href="https://en.wikipedia.org/wiki/Hong_Kong">Hong Kong SAR</a>, China.
                                 <p class="w3-margin-top-2">
-                                    I am currently a Postdoctoral Associate at the <a href="https://live-ucalgary.ucalgary.ca/research/mms-geomatics/home-mmss" class="">Mobile Multi-Sensors Systems (MMSS) Research Team</a>, the Department of Geomatics Engineering, <a href="https://www.ucalgary.ca/" class="">University of Calgary (UofC)</a>, <a href="https://en.wikipedia.org/wiki/Calgary">Calgary</a>, Canada, where I received the Ph.D. degree in 2020; I also obtained the Ph.D. degree with the School of Information and Electronics, <a href="https://english.bit.edu.cn/" class="">Beijing Institute of Technology (BIT)</a>, <a href="https://en.wikipedia.org/wiki/Beijing">Beijing</a>, China, in the same year. After that, I was a Postdoctoral Fellow at the <a href="https://www.polyu-ipn-lab.com/" class="">
-                                        Intelligent Positioning and Navigation Laboratory (IPNL)</a> of the Department of Aeronautical and Aviation Engineering, <a href="https://www.polyu.edu.hk/en/" class="">The Hong Kong Polytechnic University (PolyU)</a>, <a href="https://en.wikipedia.org/wiki/Hong_Kong">Hong Kong SAR</a>, China.
-                                    <p class="w3-margin-top-2">
-                                        <b>Research Interests: </b>
-                                        <br /> - <i>SR GNSS signal processing & remote sensing</i>
-                                        <br /> - <i>Advanced GNSS SDR design</i>
-                                        <br /> - <i>Urban/indoor positioning & navigation</i>
-                                    </p>
+                                    <b>Research Interests: </b>
+                                    <br /> - <i>SR GNSS signal processing & remote sensing</i>
+                                    <br /> - <i>Advanced GNSS SDR design</i>
+                                    <br /> - <i>Urban/indoor positioning & navigation</i>
                                 </p>
-                            </td>
-                            <td style="padding:2.5%;width:42%;max-width:42%">
-                                <!--IMAGE/AVATAR-->
-                                <img src="images/lyrlife.jpg" class="w3-circle w3-border w3-border-sand" style="width:100%" style="border-width: 3px !important;" />
-                                <p style="text-align:center">
-                                    <a href="mailto:yiran.luo@ucalgary.ca">Email</a> &nbsp/&nbsp
-                                    <!-- <a href="data/Yiran-CV.pdf">CV</a> &nbsp/&nbsp -->
-                                    <a href="data/YiranLuo_bio.txt">Bio</a>
-                                </p>
-                                <!--SCIAL NETWORK BUTTONS-->
-                                <div class="w3-padding-large w3-center">
-                                    <a href="https://scholar.google.com/citations?user=epDniJ0AAAAJ&hl=en" class="" title="Google Scholar">
-                                        <img src="images/googleScholarIcon.png" style="width:10%" class="w3-circle">
-                                    </a>
-                                    <a href="https://www.researchgate.net/profile/Yiran-Luo-2" class="" title="ResearchGate">
-                                        <img src="images/rgIcon.png" style="width:8%" class="w3-circle">
-                                    </a>
-                                    <a href="https://www.linkedin.com/in/yiran-luo-phd-67523a134" class="" title="LinkedIn">
-                                        <img src="images/linkedinIcon.jpg" style="width:8%" class="w3-circle">
-                                    </a>
-                                    <a href="https://www.orcid.org/0000-0002-8112-4376" class="" title="ORCID">
-                                        <img src="images/orcidIcon.png" style="width:8%" class="w3-circle">
-                                    </a>
-                                    <a href="http://www.webofscience.com/wos/author/record/AAB-9928-2020" class="" title="Publons">
-                                        <img src="images/publonsIcon.png" style="width:8%" class="w3-circle">
-                                    </a>
-                                    <a href="http://arxiv.org/a/luo_y_4" class="" title="arXiv">
-                                        <img src="images/arxivIcon.png" style="width:8%" class="w3-circle">
-                                    </a>
-                                    <a href="https://github.com/yrluo" class="" title="GitHub">
-                                        <img src="images/githubIcon.png" style="width:8%" class="w3-circle">
-                                    </a>
-                                    <a href="https://www.youtube.com/channel/UCGThso1It28W0ZagZaRWLVA" class="" title="YouTube">
-                                        <img src="images/youtubeIcon.png" style="width:8%" class="w3-circle">
-                                    </a>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <!-- END HOME SECTIONS -->
-            </div>
-            <!--ABOUT SECTION-->
-            <!-- <div id="about" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+                            </p>
+                        </td>
+                        <td style="padding:2.5%;width:42%;max-width:42%">
+                            <!--IMAGE/AVATAR-->
+                            <img src="images/lyrlife.jpg" class="w3-circle w3-border w3-border-sand" style="width:90%" style="border-width: 3px !important;" />
+                            <p style="text-align:center">
+                                <a href="mailto:yiran.luo@ucalgary.ca">Email</a> &nbsp/&nbsp
+                                <!-- <a href="data/Yiran-CV.pdf">CV</a> &nbsp/&nbsp -->
+                                <a href="data/YiranLuo_bio.txt">Bio</a>
+                            </p>
+                            <!--SCIAL NETWORK BUTTONS-->
+                            <div class="w3-padding-large w3-center">
+                                <a href="https://scholar.google.com/citations?user=epDniJ0AAAAJ&hl=en" class="" title="Google Scholar">
+                                    <img src="images/googleScholarIcon.png" style="width:16%" class="w3-circle">
+                                </a>
+                                <a href="https://www.researchgate.net/profile/Yiran-Luo-2" class="" title="ResearchGate">
+                                    <img src="images/rgIcon.png" style="width:15%" class="w3-circle">
+                                </a>
+                                <a href="https://www.linkedin.com/in/yiran-luo-phd-67523a134" class="" title="LinkedIn">
+                                    <img src="images/linkedinIcon.jpg" style="width:15%" class="w3-circle">
+                                </a>
+                                <a href="https://www.orcid.org/0000-0002-8112-4376" class="" title="ORCID">
+                                    <img src="images/orcidIcon.png" style="width:15%" class="w3-circle">
+                                </a>
+                                </br><a href="http://www.webofscience.com/wos/author/record/AAB-9928-2020" class="" title="Publons">
+                                    <img src="images/publonsIcon.png" style="width:15%" class="w3-circle">
+                                </a>
+                                <a href="http://arxiv.org/a/luo_y_4" class="" title="arXiv">
+                                    <img src="images/arxivIcon.png" style="width:15%" class="w3-circle">
+                                </a>
+                                <a href="https://github.com/yrluo" class="" title="GitHub">
+                                    <img src="images/githubIcon.png" style="width:15%" class="w3-circle">
+                                </a>
+                                <a href="https://www.youtube.com/channel/UCGThso1It28W0ZagZaRWLVA" class="" title="YouTube">
+                                    <img src="images/youtubeIcon.png" style="width:15%" class="w3-circle">
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- END HOME SECTIONS -->
+        </div>
+        <!--ABOUT SECTION-->
+        <!-- <div id="about" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
                 <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">SUMMARY OF PROFILE</h2>
                 <p class="w3-margin-top-2">
                     I am currently a Postdoctoral Associate at the <a href="https://live-ucalgary.ucalgary.ca/research/mms-geomatics/home-mmss" class="">Mobile Multi-Sensors Systems (MMSS) Research Team</a>, the Department of Geomatics Engineering, <a href="https://www.ucalgary.ca/" class="">University of Calgary (UofC)</a>, <a href="https://en.wikipedia.org/wiki/Calgary">Calgary</a>, Canada, where I received the Ph.D. degree in 2020; I also obtained the Ph.D. degree with the School of Information and Electronics, <a href="https://english.bit.edu.cn/" class="">Beijing Institute of Technology (BIT)</a>, <a href="https://en.wikipedia.org/wiki/Beijing">Beijing</a>, China, in the same year. After that, I was a Postdoctoral Fellow at the <a href="https://www.polyu-ipn-lab.com/" class="">
@@ -212,33 +216,29 @@
                     </p>
                 </p>
             </div> -->
-            <!--CONTACT SECTION-->
-            <div id="contact" class="w3-container w3-margin-top-20-percent w3-cursive">
-                <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">CONTACT</h2>
-                <div class="w3-margin-top-2" style="font-weight: 500;">
-                    <p>Name: Yiran Luo</p>
-                    <p>Address: Room #361, CCIT Building, 2500 University Dr NW, Calgary, AB, Canada T2N 1N4</p>
-                    <!-- You can set the Maps Embed API URL as the src attribute of an iframe. 
+        <!--CONTACT SECTION-->
+        <div id="contact" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">CONTACT</h2>
+            <div class="w3-margin-top-2" style="font-weight: 500;">
+                <p>Name: Yiran Luo</p>
+                <p>Address: Room #361, CCIT Building, 2500 University Dr NW, Calgary, AB, Canada T2N 1N4</p>
+                <!-- You can set the Maps Embed API URL as the src attribute of an iframe. 
                 When configuring a src property, the required q parameter can support a 
                 URL-escaped place name, address, plus code, or Place ID:-->
-                    <iframe alt="Lights" width="250" height="225" style="border:0" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCJHZrzsuGgz1O5EfLT-Be6EdvRZdphCrM
+                <iframe alt="Lights" width="320" height="280" style="border:0" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCJHZrzsuGgz1O5EfLT-Be6EdvRZdphCrM
                   &q=Calgary+Centre+for+Innovative+Technology, 622+Collegiate+Pl+NW, Calgary">
-                    </iframe>
-                    <p>Phone number: (+1)403-607-0013</p>
-                    <p>E-mail: yiran.luo@ucalgary.ca, yiran.gnss@gmail.com, yiran.luo@foxmail.com</p>
-                    <p>Website: <a href="https://www.luoyiran.site" class="">luoyiran.site</a></p>
-                </div>
+                </iframe>
+                <p>Phone number: (+1)403-607-0013</p>
+                <p>E-mail: yiran.luo@ucalgary.ca, yiran.gnss@gmail.com, yiran.luo@foxmail.com</p>
+                <p>Website: <a href="https://www.luoyiran.site" class="">luoyiran.site</a></p>
+                <!-- </div> -->
             </div>
             <!--FOOTER-->
-            
             <!-- Previous and Next Buttons -->
             <footer class="w3-container w3-border-none w3-center w3-margin-top-4 w3-none w3-border-sand">
-
-              <!-- <a-bt href="#" class="previous">&laquo; Previous</a-bt> -->
-              <a href="research.html" class="next w3-hover-text-amber" style="margin-left:650px; width:150px; font-size: 18px; font-weight: bold;">Research &raquo;</a>
-
+                <!-- <a-bt href="#" class="previous">&laquo; Previous</a-bt> -->
+                <a href="research.html" class="next my-bt" style="margin-left:0px; width:150px; font-size: 16px; font-weight: light;">Research &raquo;</a>
             </footer>
-
             <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
             <footer class="w3-container w3-border-top w3-center w3-margin-top-none w3-sand w3-border-sand w3-text-grey">
                 <p>© 2023 - Yiran Luo | Super-resolution GNSSer | Hi, welcome! | Made with <a href="https://www.w3schools.com/spaces">W3schools Spaces</a></p>
@@ -255,88 +255,132 @@
             <!--END OF CV SECTION-->
             <!-- </section>    -->
         </div>
-    </section>
-    <script>
-    // Function to toggle mobile navigation
-    function toggleNavigation() {
-        let nav = document.getElementById("mobile-nav");
-        if (nav.classList.contains('w3-show')) {
-            nav.classList.remove('w3-show');
-        } else {
-            nav.classList.add('w3-show');
+        <!-- </section> -->
+        <!---------------- Script section -------------------->
+        <script>
+            // scroll 2 sticky navigator bar
+            var navbar = document.getElementById("my2ndSidebar");
+            var sticky = navbar.offsetTop;
+
+        </script>
+        <script type="">
+            /*----------- Scroll to top button function --------------*/
+        // Get the button
+        let myScro2TopBt = document.getElementById("my-scrTop-Btn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() { scrollFunction() };
+
+        // function scrollFunction() {
+        //     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        //         myScro2TopBt.style.display = "block";
+        //     } else {
+        //         myScro2TopBt.style.display = "none";
+        //     }
+        // }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
         }
-    }
-    </script>
-    <script>
-    // Script to load feather icons
-    feather.replace()
-    </script>
-    <script>
-    // Script to load accordion navigation
-    function loadAccordion(id) {
-        var x = document.getElementById(id);
-        if (x.className.indexOf("w3-show") == -1) {
-            x.className += " w3-show";
-        } else {
-            x.className = x.className.replace(" w3-show", "");
+        </script>
+        <script>
+        // Function to toggle mobile navigation
+        function toggleNavigation() {
+            let nav = document.getElementById("mobile-nav");
+            if (nav.classList.contains('w3-show')) {
+                nav.classList.remove('w3-show');
+            } else {
+                nav.classList.add('w3-show');
+            }
         }
-    }
-
-    // Open and close sidebar
-    function w3_open() {
-        document.getElementById("mySidebar").style.display = "block";   
-        document.getElementById("myOverlay").style.display = "block";
-
-        // avoid the 2nd navigation bar
-        document.getElementById("my2ndSidebar").style.display = "none";
-    }
-
-    function w3_close() {
-        document.getElementById("mySidebar").style.display = "none";
-        document.getElementById("myOverlay").style.display = "none";
-
-        // avoid the 2nd navigation bar
-        document.getElementById("my2ndSidebar").style.display = "block";
-    }
-
-    // When the user scrolls the page, execute myFunction 
-    window.onscroll = function() { myFunction() };
-
-    function myFunction() {
-        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        var scrolled = (winScroll / height) * 100;
-
-        // document.getElementById("myBar").style.width = scrolled + "%";
-        // document.getElementById("home").scrollIntoView();
-        // $("#home").offset().top;
-
-        var nameNavHeight = document.getElementById("home").offsetTop;
-        var contactNavHeight = document.getElementById("contact").offsetTop-200;
-
-        const listNameNav = document.getElementById("nameNav").classList;
-        const listContactNav = document.getElementById("contactNav").classList;
-
-        // document.getElementById("myBar").style.width = (winScroll / nameNavHeight) * 100 + "%";
-
-        if (winScroll >= nameNavHeight && winScroll < contactNavHeight) {
-
-            listNameNav.replace("w3-text-black", "w3-text-amber");
-            listContactNav.replace("w3-text-amber", "w3-text-black");
-
-        } else if (winScroll >= contactNavHeight) {
-
-            listContactNav.replace("w3-text-black", "w3-text-amber");
-            listNameNav.replace("w3-text-amber", "w3-text-black");
-
-        } else {
-
-            listNameNav.replace("w3-text-amber", "w3-text-black");
-            listContactNav.replace("w3-text-amber", "w3-text-black");
-
+        </script>
+        <script>
+        // Script to load feather icons
+        feather.replace()
+        </script>
+        <script>
+        // Script to load accordion navigation
+        function loadAccordion(id) {
+            var x = document.getElementById(id);
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
         }
-    }
-    </script>
+
+        // Open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+
+            // avoid the 2nd navigation bar
+            document.getElementById("my2ndSidebar").style.display = "none";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+
+            // avoid the 2nd navigation bar
+            document.getElementById("my2ndSidebar").style.display = "block";
+        }
+
+
+        function scrollFunction() {
+
+            /*------ scroll 2 sticky nav bar -------*/
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+
+            /*------ scroll 2 top -------*/
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                myScro2TopBt.style.display = "block";
+            } else {
+                myScro2TopBt.style.display = "none";
+            }
+
+
+            /*------ anchor tracking -------*/
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+
+            // document.getElementById("myBar").style.width = scrolled + "%";
+            // document.getElementById("home").scrollIntoView();
+            // $("#home").offset().top;
+
+            var nameNavHeight = document.getElementById("home").offsetTop;
+            var contactNavHeight = document.getElementById("contact").offsetTop - 200;
+
+            const listNameNav = document.getElementById("nameNav").classList;
+            const listContactNav = document.getElementById("contactNav").classList;
+
+            // document.getElementById("myBar").style.width = (winScroll / nameNavHeight) * 100 + "%";
+
+            if (winScroll >= nameNavHeight && winScroll < contactNavHeight) {
+
+                listNameNav.replace("w3-text-black", "w3-text-amber");
+                listContactNav.replace("w3-text-amber", "w3-text-black");
+
+            } else if (winScroll >= contactNavHeight) {
+
+                listContactNav.replace("w3-text-black", "w3-text-amber");
+                listNameNav.replace("w3-text-amber", "w3-text-black");
+
+            } else {
+
+                listNameNav.replace("w3-text-amber", "w3-text-black");
+                listContactNav.replace("w3-text-amber", "w3-text-black");
+
+            }
+        }
+        </script>
 </body>
 
 </html>
