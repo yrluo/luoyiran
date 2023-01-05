@@ -88,8 +88,8 @@
         <!--MAIN CONTENTS-->
         <div class="w3-main" style="margin-left:180px">
             <!-- RESEARCH -->
-            <div id="research" class="w3-container w3-margin-top-20-percent w3-cursive">
-                <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">RESEARCH</h2>
+            <div id="research" class="w3-container w3-margin-top-20-percent w3-cursive" , style="margin-top:80px">
+                <h1 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">RESEARCH</h1>
                 <!-- PREFACE -->
                 <div id="preface" class="w3-container w3-margin-top-2 w3-cursive">
                     <h3 class="w3-border-amber">PREFACE</h3>
@@ -129,6 +129,48 @@
                 <div id="srgnsssp" class="w3-container w3-margin-top-2 w3-cursive">
                     <h3 class="w3-border-amber">SUPER-RESOLUTION GNSS SIGNAL PROCESSING</h3>
                     <p> (to be completed ...) </p>
+                    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                        <tbody>
+                            <!-- 2018: luoComm -->
+                            <tr onmouseout="luoComm2018_stop()" onmouseover="luoComm2018_start()">
+                                <td style="padding:20px;width:25%;vertical-align:middle">
+                                    <div class="one">
+                                        <div class="two" id='luoComm2018_image'>
+                                            <img src='images/research/luoComm2018_after.png' width="160">
+                                        </div>
+                                        <img src='images/research/luoComm2018_before.png' width="160">
+                                    </div>
+                                    <script type="text/javascript">
+                                    function luoComm2018_start() {
+                                        document.getElementById('luoComm2018_image').style.opacity = "1";
+                                    }
+
+                                    function luoComm2018_stop() {
+                                        document.getElementById('luoComm2018_image').style.opacity = "0";
+                                    }
+                                    luoComm2018_stop()
+                                    </script>
+                                </td>
+                                <td style="padding:20px;width:75%;vertical-align:middle">
+                                    <a href="https://doi.org/10.1109/LCOMM.2018.2828834">
+                                        <papertitle>An acquisition algorithm based on FRFT for weak GNSS signals in a dynamic environment</papertitle>
+                                    </a>
+                                    <br>
+                                    <strong>Yiran Luo</strong>,
+                                    <!-- <a href=""></a>, -->
+                                    Lei Zhang, Hang Ruan
+                                    <!-- <a href="https://yilundu.github.io/">Yilun Du</a>, -->
+                                    <br>
+                                    <em>IEEE Communications Letters</em>, 2018
+                                    <br>
+                                    [<a href="https://drive.google.com/file/d/1jOtX3BXLRkH4PdIbqjJ4helTiVCcGioM/view?usp=share_link" class=""><u>paper</u></a>]
+                                    [<a href="data/luoComm2018.bib"><u>bibtex</u></a>]
+                                    <p></p>
+                                    <p>Fractional Fourier transform is used for GNSS long coherent integration; then detection probability of weak and high-dynamic signal acquisition is significantly improved.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
                 <!-- ADVANCED GNSS RECEIVER DESIGN -->
                 <div id="agnssrd" class="w3-container w3-margin-top-2 w3-cursive">

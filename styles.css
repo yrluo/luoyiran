@@ -4,12 +4,28 @@ body * {
      !"Lato"
 }
 
+a {
+    color: #1772d0;
+    text-decoration: none;
+}
 
+a:focus,
+a:hover {
+    color: #f09228;
+    text-decoration: none;
+}
+
+td,
+th,
+tr,
 html,
-body {
+body,
+a {
+    font-family: "Montserrat", Verdana, Helvetica, sans-serif, "黑体";
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
+    font-size: 14px
 }
 
 h1,
@@ -38,34 +54,24 @@ h3 {
 }
 
 h4 {
-    font-size: 12px;
+    font-size: 14px;
     margin-top: 8px;
     font-weight: 500;
 }
 
 p {
-    font-size: 12px;
+    font-size: 14px;
     margin-top: 8px;
     font-weight: 500;
 }
 
 
 ul li {
-    font-size: 12px;
+    font-size: 14px;
     border: none !important;
     font-weight: 500;
 }
 
-a {
-    color: #1772d0;
-    text-decoration: none;
-}
-
-a:focus,
-a:hover {
-    color: #f09228;
-    text-decoration: none;
-}
 
 /*buttons*/
 .my-bt {
@@ -172,7 +178,7 @@ a:hover {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-    top:100px;
+    top: 100px;
 }
 
 #my2ndSidebar a:hover {
@@ -376,4 +382,51 @@ a:hover {
     .download-text {
         display: inline-block;
     }
+}
+
+/*research image*/
+strong {
+  font-family: "Montserrat", Verdana, Helvetica, sans-serif, "黑体";
+  font-size: 14px;
+}
+
+heading {
+  font-family: "Montserrat", Verdana, Helvetica, sans-serif, "黑体";
+  font-size: 22px;
+}
+
+papertitle {
+  font-family: "Montserrat", Verdana, Helvetica, sans-serif, "黑体";
+  font-size: 14px;
+  font-weight: 700
+}
+
+name {
+  font-family: "Montserrat", Verdana, Helvetica, sans-serif, "黑体";
+  font-size: 32px;
+}
+
+.one {
+  width: 160px;
+  height: 160px;
+  position: relative;
+}
+
+.two {
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
+}
+
+.fade {
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
+}
+
+span.highlight {
+  background-color: #ffffd0;
 }
