@@ -135,11 +135,17 @@
                             <tr onmouseout="luoUnpulished2022_stop()" onmouseover="luoUnpulished2022_start()">
                                 <td style="padding:5px;width:25%;vertical-align:middle;">
                                     <div class="one">
+                                        <!-- <div class="two" id='luoUnpulished2022_image'>
+                                            <img src='images/research/luoUnpublished2022_after.gif' width="160">
+                                        </div> -->
                                         <div class="two" id='luoUnpulished2022_image'>
-                                            <img src='' width="160">
+                                            <video width=100% height=100% muted autoplay loop>
+                                                <source src="images/research/luoUnpublished2022_after.mp4" type="video/mp4">
+                                                Your browser does not support the video tag.
+                                            </video>
                                         </div>
-                                        <img src='' width="160">
-                                        <!-- <img src='images/research/luoUnpulished2022_before.png' width="160"> -->
+                                        <!-- <img src='' width="160"> -->
+                                        <img src='images/research/luoUnpublished2022_1.png' width="160">
                                     </div>
                                     <script type="text/javascript">
                                     function luoUnpulished2022_start() {
@@ -149,17 +155,17 @@
                                     function luoUnpulished2022_stop() {
                                         document.getElementById('luoUnpulished2022_image').style.opacity = "0";
                                     }
-                                    luoAccess2019_stop()
+                                    luoUnpulished2022_stop()
                                     </script>
                                 </td>
                                 <td style="padding:5px;width:75%;vertical-align:middle">
-                                    <a href="">
+                                    <a href="data/na.txt">
                                         <papertitle>An unassisted super-resolution satellite navigation receiver using GPS L5 signals</papertitle>
                                     </a>
                                     <br>
                                     <strong>Yiran Luo</strong>,
-                                    <a href="https://scholar.google.com/citations?user=zj_5SNsAAAAJ&hl=en" class="">Chin Lok Tsang</a>, 
-                                    <a href="https://scholar.google.com/citations?user=GxfOCUMAAAAJ&hl=en&oi=ao" class="">Li-Ta Hsu</a>, 
+                                    <a href="https://scholar.google.com/citations?user=zj_5SNsAAAAJ&hl=en" class="">Chin Lok Tsang</a>,
+                                    <a href="https://scholar.google.com/citations?user=GxfOCUMAAAAJ&hl=en&oi=ao" class="">Li-Ta Hsu</a>,
                                     <a href="http://schulich.ucalgary.ca/profiles/naser-el-sheimy" class="">Naser El-Sheimy</a>
                                     <br>
                                     <em>Under review</em>, 2022
@@ -167,7 +173,8 @@
                                     <!-- [<a href="https://rdcu.be/c2A9X" class=""><u>paper</u></a>]
                                     [<a href="data/luoUnpulished2022.bib"><u>bibtex</u></a>] -->
                                     <p></p>
-                                    <p>(to be completed...)</p>
+                                    <p>We propose an unassisted GPS L5 SDR to achieve super-resolution (SR) positioning in a highly challenging scenario of the real world. The proposed technique leverages super-long correlation (>1s) in the time-frequency domain to produce an SR Doppler frequency through which a dead reckoning approach for high-accuracy code phase estimation is achieved with a numerically controlled oscillator resisting versatile multipath rays caused by the obstacles in urban cayons. </p>
+                                    <p>In the short future, a new GNSS SDR/receiver can achieve decimeter- or centimeter-level positioning and (sub-) nanosecond timing.</p>
                                 </td>
                             </tr>
                             <!-- 2022: luoUnpulished nav -->
@@ -175,10 +182,9 @@
                                 <td style="padding:5px;width:25%;vertical-align:middle;">
                                     <div class="one">
                                         <div class="two" id='luoUnpulishedNav2022_image'>
-                                            <img src='' width="160">
+                                            <img src='images/research/luoUnpulishedNav2022_after.png' width="160">
                                         </div>
-                                        <img src='' width="160">
-                                        <!-- <img src='images/research/luoUnpulishedNav2022_before.png' width="160"> -->
+                                        <img src='images/research/luoUnpulishedNav2022_before.png' width="160">
                                     </div>
                                     <script type="text/javascript">
                                     function luoUnpulishedNav2022_start() {
@@ -188,16 +194,16 @@
                                     function luoUnpulishedNav2022_stop() {
                                         document.getElementById('luoUnpulishedNav2022_image').style.opacity = "0";
                                     }
-                                    luoAccess2019_stop()
+                                    luoUnpulishedNav2022_stop()
                                     </script>
                                 </td>
                                 <td style="padding:5px;width:75%;vertical-align:middle">
-                                    <a href="">
+                                    <a href="data/na.txt">
                                         <papertitle>A Baseband MLE for Snapshot GNSS Receiver Using Super-Long-Coherent Correlation in a Fractional Fourier Domain</papertitle>
                                     </a>
                                     <br>
                                     <strong>Yiran Luo</strong>,
-                                    <a href="https://scholar.google.com/citations?user=GxfOCUMAAAAJ&hl=en&oi=ao" class="">Li-Ta Hsu</a>, 
+                                    <a href="https://scholar.google.com/citations?user=GxfOCUMAAAAJ&hl=en&oi=ao" class="">Li-Ta Hsu</a>,
                                     <a href="http://schulich.ucalgary.ca/profiles/naser-el-sheimy" class="">Naser El-Sheimy</a>
                                     <br>
                                     <em>Under review</em>, 2022
@@ -205,7 +211,8 @@
                                     <!-- [<a href="https://rdcu.be/c2A9X" class=""><u>paper</u></a>]
                                     [<a href="data/luoUnpulishedNav2022.bib"><u>bibtex</u></a>] -->
                                     <p></p>
-                                    <p>(to be completed...)</p>
+                                    <p>A new and more advanced snapshot GNSS baseband architecture is proposed based on a fractional-Fourier-domain analytical super-long complex correlation (1s) and a maximum likelihood estimator. It has been proved that the baseband estimation results can achieve a theoretical lower bound (CRLB). </p>
+                                    <p>A super-resolution snapshot GNSS SDR/receiver is practically available for future commercial markets.</p>
                                 </td>
                             </tr>
                             <!-- 2021: luoIonGnss+ sra -->
@@ -225,7 +232,7 @@
                                     function luoIonGnss2021a_stop() {
                                         document.getElementById('luoIonGnss2021a_image').style.opacity = "0";
                                     }
-                                    luoAccess2019_stop()
+                                    luoIonGnss2021a_stop()
                                     </script>
                                 </td>
                                 <td style="padding:5px;width:75%;vertical-align:middle">
@@ -274,7 +281,8 @@
                                     <strong>Yiran Luo</strong>,
                                     <a href="https://scholar.google.com/citations?user=0DtGoYMAAAAJ&hl=en">Chunyang Yu</a>,
                                     <a href="https://scholar.google.com/citations?hl=en&user=a0Bkj7sAAAAJ" class="">Shaohua Chen</a>,
-                                    Jian Li, Hang Ruan,
+                                    <a href="http://www.radarlab.cn/TeacherView.Asp?ID=164" class="">Jian Li</a>,
+                                    Hang Ruan,
                                     <a href="http://schulich.ucalgary.ca/profiles/naser-el-sheimy" class="">Naser El-Sheimy</a>
                                     <br>
                                     <em>IEEE Access</em>, 2019
@@ -332,6 +340,47 @@
                     <p> (to be completed ...) </p>
                     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                         <tbody>
+                            <!-- 2023: luoArxiv2023a -->
+                            <tr onmouseout="luoArxiv2023a_stop()" onmouseover="luoArxiv2023a_start()">
+                                <td style="padding:5px;width:25%;vertical-align:middle">
+                                    <div class="one">
+                                        <div class="two" id='luoArxiv2023a_image'>
+                                            <img src='images/research/luoArxiv2023a_after.png' width="160">
+                                        </div>
+                                        <img src='images/research/luoArxiv2023a_before.png' width="160">
+                                    </div>
+                                    <script type="text/javascript">
+                                    function luoArxiv2023a_start() {
+                                        document.getElementById('luoArxiv2023a_image').style.opacity = "1";
+                                    }
+
+                                    function luoArxiv2023a_stop() {
+                                        document.getElementById('luoArxiv2023a_image').style.opacity = "0";
+                                    }
+                                    luoArxiv2023a_stop()
+                                    </script>
+                                </td>
+                                <td style="padding:5px;width:75%;vertical-align:middle">
+                                    <a href="https://doi.org/10.48550/arXiv.2301.00308">
+                                        <papertitle>High-Accuracy Absolute-Position-Aided Code Phase Tracking Based on RTK/INS Deep Integration in Challenging Static Scenarios</papertitle>
+                                    </a>
+                                    <br>
+                                    <strong>Yiran Luo</strong>,
+                                    <a href="https://scholar.google.com/citations?user=GxfOCUMAAAAJ&hl=en&oi=ao" class="">Li-Ta Hsu</a>,
+                                    <a href="https://scholar.google.com/citations?user=vfQfXkMAAAAJ&hl=en&oi=ao">Yang Jiang</a>,
+                                    <a href="https://scholar.google.com/citations?user=v-uA7vsAAAAJ&hl=en&oi=sra">Baoyu Liu</a>,
+                                    <a href="https://scholar.google.com/citations?user=bkXrQ1MAAAAJ&hl=en" class="">Zhetao Zhang</a>,
+                                    <a href="https://sites.google.com/site/yanxiang0212/">Yan Xiang</a>,
+                                    <a href="http://schulich.ucalgary.ca/profiles/naser-el-sheimy" class="">Naser El-Sheimy</a>
+                                    <br>
+                                    <em>Under Review</em>, 2023
+                                    <br>
+                                    [<a href="https://arxiv.org/pdf/2301.00308.pdf" class=""><u>arXiv</u></a>]
+                                    [<a href="data/luoArxiv2023a.bib"><u>bibtex</u></a>]
+                                    <p></p>
+                                    <p>An improved deep integration method regarding low-cost INS and GNSS RTK is proposed based on the absolute-position-aided code phase tracking technique. It proves that the INS can be well-complementary for the GNSS baseband signal modeling in a challenging static scenario.</p>
+                                </td>
+                            </tr>
                             <!-- 2022: luoGpss -->
                             <tr onmouseout="luoGpss2022_stop()" onmouseover="luoGpss2022_start()">
                                 <td style="padding:5px;width:25%;vertical-align:middle;">
@@ -350,7 +399,7 @@
                                     function luoGpss2022_stop() {
                                         document.getElementById('luoGpss2022_image').style.opacity = "0";
                                     }
-                                    luoAccess2019_stop()
+                                    luoGpss2022_stop()
                                     </script>
                                 </td>
                                 <td style="padding:5px;width:75%;vertical-align:middle">
@@ -389,7 +438,7 @@
                                     function luoIonGnss2021b_stop() {
                                         document.getElementById('luoIonGnss2021b_image').style.opacity = "0";
                                     }
-                                    luoAccess2019_stop()
+                                    luoIonGnss2021b_stop()
                                     </script>
                                 </td>
                                 <td style="padding:5px;width:75%;vertical-align:middle">
@@ -399,9 +448,9 @@
                                     <br>
                                     <strong>Yiran Luo</strong>,
                                     <a href="https://scholar.google.com/citations?user=GxfOCUMAAAAJ&hl=en&oi=ao" class="">Li-Ta Hsu</a>,
-                                    <a href="https://sites.google.com/site/yanxiang0212/" class="">Yan Xiang</a>, 
+                                    <a href="https://sites.google.com/site/yanxiang0212/" class="">Yan Xiang</a>,
                                     <a href="https://pbingxu.github.io/" class="">Bing Xu</a>,
-                                    <a href="https://scholar.google.com/citations?user=0DtGoYMAAAAJ&hl=en" class="">Chun Yu</a>
+                                    <a href="https://scholar.google.com/citations?user=0DtGoYMAAAAJ&hl=en" class="">Chunyang Yu</a>
                                     <br>
                                     <em>ION GNSS+</em>, 2021 &nbsp <font color="red"><strong>(Online Presentation)</strong></font>
                                     <br>
@@ -417,9 +466,9 @@
                                 <td style="padding:5px;width:25%;vertical-align:middle;">
                                     <div class="one">
                                         <div class="two" id='luoMmt2019_image'>
-                                            <img src='images/research/luoMmt2019_spp.png' width="160">
+                                            <img src='images/research/luoMmt2019_rtk.png' width="160">
                                         </div>
-                                        <img src='images/research/luoMmt2019_rtk.png' width="160">
+                                        <img src='images/research/luoMmt2019_spp.png' width="160">
                                     </div>
                                     <script type="text/javascript">
                                     function luoMmt2019_start() {
@@ -429,7 +478,7 @@
                                     function luoMmt2019_stop() {
                                         document.getElementById('luoMmt2019_image').style.opacity = "0";
                                     }
-                                    luoAccess2019_stop()
+                                    luoMmt2019_stop()
                                     </script>
                                 </td>
                                 <td style="padding:5px;width:75%;vertical-align:middle">
@@ -449,10 +498,8 @@
                                     [<a href="data/luoMmt2019.bib"><u>bibtex</u></a>]
                                     <p></p>
                                     <p>The vector GNSS SDR platform is enhanced with an EKF navigator and the carrier-based positioning results verified the improved SDR in a challenging kinematic real-world field test.</p>
-                                    
                                 </td>
                             </tr>
-
                             <!-- 2019: luoPacificPnt2019 -->
                             <tr onmouseout="luoPacificPnt2019_stop()" onmouseover="luoPacificPnt2019_start()">
                                 <td style="padding:5px;width:25%;vertical-align:middle;">
@@ -470,7 +517,7 @@
                                     function luoPacificPnt2019_stop() {
                                         document.getElementById('luoPacificPnt2019_image').style.opacity = "0";
                                     }
-                                    luoAccess2019_stop()
+                                    luoPacificPnt2019_stop()
                                     </script>
                                 </td>
                                 <td style="padding:5px;width:75%;vertical-align:middle">
@@ -519,7 +566,7 @@
                                     function luoRs2019_stop() {
                                         document.getElementById('luoRs2019_image').style.opacity = "0";
                                     }
-                                    luoAccess2019_stop()
+                                    luoRs2019_stop()
                                     </script>
                                 </td>
                                 <td style="padding:5px;width:75%;vertical-align:middle">
@@ -587,6 +634,66 @@
                 myScro2TopBt.style.display = "block";
             } else {
                 myScro2TopBt.style.display = "none";
+            }
+
+            /*------ anchor tracking -------*/
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+
+            var prefaceNavHeight = document.getElementById("preface").offsetTop;
+            var srgnssspNavHeight = document.getElementById("srgnsssp").offsetTop;
+            var agnssrdNavHeight = document.getElementById("agnssrd").offsetTop;
+            var navPosInHarEnNavHeight = document.getElementById("navPosInHarEn").offsetTop - 200;
+
+
+
+
+            const listPrefaceNav = document.getElementById("prefaceNav").classList;
+            const listSrgnssspNav = document.getElementById("srgnssspNav").classList;
+            const listAgnssrdNav = document.getElementById("agnssrdNav").classList;
+            const listNavPosInHarEnNav = document.getElementById("navPosInHarEnNav").classList;
+
+
+            if (winScroll >= prefaceNavHeight && winScroll < srgnssspNavHeight) {
+
+                listPrefaceNav.replace("w3-text-black", "w3-text-amber");
+                listSrgnssspNav.replace("w3-text-amber", "w3-text-black");
+                listAgnssrdNav.replace("w3-text-amber", "w3-text-black");
+                listNavPosInHarEnNav.replace("w3-text-amber", "w3-text-black");
+
+            } else if (winScroll >= srgnssspNavHeight && winScroll < agnssrdNavHeight) {
+
+                listPrefaceNav.replace("w3-text-amber", "w3-text-black");
+                listSrgnssspNav.replace("w3-text-black", "w3-text-amber");
+                listAgnssrdNav.replace("w3-text-amber", "w3-text-black");
+                listNavPosInHarEnNav.replace("w3-text-amber", "w3-text-black");
+
+
+            } else if (winScroll >= agnssrdNavHeight  && winScroll < navPosInHarEnNavHeight) {
+
+                listPrefaceNav.replace("w3-text-amber", "w3-text-black");
+                listSrgnssspNav.replace("w3-text-amber", "w3-text-black");
+                listAgnssrdNav.replace("w3-text-black", "w3-text-amber");
+                listNavPosInHarEnNav.replace("w3-text-amber", "w3-text-black");
+
+
+            } else if (winScroll >= navPosInHarEnNavHeight ) {
+
+                listPrefaceNav.replace("w3-text-amber", "w3-text-black");
+                listSrgnssspNav.replace("w3-text-amber", "w3-text-black");
+                listAgnssrdNav.replace("w3-text-amber", "w3-text-black");
+                listNavPosInHarEnNav.replace("w3-text-black", "w3-text-amber");
+
+
+            } else {
+
+                listPrefaceNav.replace("w3-text-amber", "w3-text-black");
+                listSrgnssspNav.replace("w3-text-amber", "w3-text-black");
+                listAgnssrdNav.replace("w3-text-amber", "w3-text-black");
+                listNavPosInHarEnNav.replace("w3-text-amber", "w3-text-black");
+
+
             }
         }
 
