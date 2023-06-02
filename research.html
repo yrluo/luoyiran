@@ -131,6 +131,44 @@
                     <p> (to be completed ...) </p>
                     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                         <tbody>
+                            <!-- 2023: NAVIGATION, S-LCI baseband MLE -->
+                            <tr onmouseout="luoUnpulishedNav2022_stop()" onmouseover="luoUnpulishedNav2022_start()">
+                                <td style="padding:5px;width:25%;vertical-align:middle;">
+                                    <div class="one">
+                                        <div class="two" id='luoUnpulishedNav2022_image'>
+                                            <img src='images/research/luoUnpulishedNav2022_after.png' width="160">
+                                        </div>
+                                        <img src='images/research/luoUnpulishedNav2022_before.png' width="160">
+                                    </div>
+                                    <script type="text/javascript">
+                                    function luoUnpulishedNav2022_start() {
+                                        document.getElementById('luoUnpulishedNav2022_image').style.opacity = "1";
+                                    }
+
+                                    function luoUnpulishedNav2022_stop() {
+                                        document.getElementById('luoUnpulishedNav2022_image').style.opacity = "0";
+                                    }
+                                    luoUnpulishedNav2022_stop()
+                                    </script>
+                                </td>
+                                <td style="padding:5px;width:75%;vertical-align:middle">
+                                    <a href="https://navi.ion.org/content/70/3/navi.588.full">
+                                        <papertitle>A Baseband MLE for Snapshot GNSS Receiver Using Super-Long-Coherent Correlation in a Fractional Fourier Domain</papertitle>
+                                    </a>
+                                    <br>
+                                    <strong>Yiran Luo</strong>,
+                                    <a href="https://scholar.google.com/citations?user=GxfOCUMAAAAJ&hl=en&oi=ao" class="">Li-Ta Hsu</a>,
+                                    <a href="http://schulich.ucalgary.ca/profiles/naser-el-sheimy" class="">Naser El-Sheimy</a>
+                                    <br>
+                                    <em>NAVIGATION</em>, 2023
+                                    <br>
+                                    [<a href="https://navi.ion.org/content/navi/70/3/navi.588.full.pdf" class=""><u>paper</u></a>]
+                                    [<a href="data/luoNav2023.bib"><u>bibtex</u></a>]
+                                    <p></p>
+                                    <p>A new and more advanced snapshot GNSS baseband architecture is proposed based on a fractional-Fourier-domain analytical super-long complex correlation (1s) and a maximum likelihood estimator. It has been proved that the baseband estimation results can achieve a theoretical lower bound (CRLB). </p>
+                                    <p>A super-resolution snapshot GNSS SDR/receiver is practically available for future commercial markets.</p>
+                                </td>
+                            </tr>
                             <!-- 2022: luoUnpulished2022 -->
                             <tr onmouseout="luoUnpulished2022_stop()" onmouseover="luoUnpulished2022_start()">
                                 <td style="padding:5px;width:25%;vertical-align:middle;">
@@ -164,8 +202,8 @@
                                     </a>
                                     <br>
                                     <strong>Yiran Luo</strong>,
-                                    <a href="https://scholar.google.com/citations?user=zj_5SNsAAAAJ&hl=en" class="">Chin Lok Tsang</a>,
                                     <a href="https://scholar.google.com/citations?user=GxfOCUMAAAAJ&hl=en&oi=ao" class="">Li-Ta Hsu</a>,
+                                    <a href="https://scholar.google.com/citations?user=zj_5SNsAAAAJ&hl=en" class="">Chin Lok Tsang</a>,
                                     <a href="http://schulich.ucalgary.ca/profiles/naser-el-sheimy" class="">Naser El-Sheimy</a>
                                     <br>
                                     <em>Under review</em>, 2022
@@ -176,45 +214,7 @@
                                     <p>We propose an unassisted GPS L5 SDR to achieve super-resolution (SR) positioning in a highly challenging scenario of the real world. The proposed technique leverages super-long correlation (>1s) in the time-frequency domain to produce an SR Doppler frequency through which a dead reckoning approach for high-accuracy code phase estimation is achieved with a numerically controlled oscillator resisting versatile multipath rays caused by the obstacles in urban cayons. </p>
                                     <p>In the near future, a new super-resolution GNSS SDR/receiver can independently achieve decimeter- or centimeter-level positioning and (sub-) nanosecond timing.</p>
                                 </td>
-                            </tr>
-                            <!-- 2022: luoUnpulished nav -->
-                            <tr onmouseout="luoUnpulishedNav2022_stop()" onmouseover="luoUnpulishedNav2022_start()">
-                                <td style="padding:5px;width:25%;vertical-align:middle;">
-                                    <div class="one">
-                                        <div class="two" id='luoUnpulishedNav2022_image'>
-                                            <img src='images/research/luoUnpulishedNav2022_after.png' width="160">
-                                        </div>
-                                        <img src='images/research/luoUnpulishedNav2022_before.png' width="160">
-                                    </div>
-                                    <script type="text/javascript">
-                                    function luoUnpulishedNav2022_start() {
-                                        document.getElementById('luoUnpulishedNav2022_image').style.opacity = "1";
-                                    }
-
-                                    function luoUnpulishedNav2022_stop() {
-                                        document.getElementById('luoUnpulishedNav2022_image').style.opacity = "0";
-                                    }
-                                    luoUnpulishedNav2022_stop()
-                                    </script>
-                                </td>
-                                <td style="padding:5px;width:75%;vertical-align:middle">
-                                    <a href="data/na.txt">
-                                        <papertitle>A Baseband MLE for Snapshot GNSS Receiver Using Super-Long-Coherent Correlation in a Fractional Fourier Domain</papertitle>
-                                    </a>
-                                    <br>
-                                    <strong>Yiran Luo</strong>,
-                                    <a href="https://scholar.google.com/citations?user=GxfOCUMAAAAJ&hl=en&oi=ao" class="">Li-Ta Hsu</a>,
-                                    <a href="http://schulich.ucalgary.ca/profiles/naser-el-sheimy" class="">Naser El-Sheimy</a>
-                                    <br>
-                                    <em>Accepted</em>, 2022
-                                    <br>
-                                    <!-- [<a href="https://rdcu.be/c2A9X" class=""><u>paper</u></a>]
-                                    [<a href="data/luoUnpulishedNav2022.bib"><u>bibtex</u></a>] -->
-                                    <p></p>
-                                    <p>A new and more advanced snapshot GNSS baseband architecture is proposed based on a fractional-Fourier-domain analytical super-long complex correlation (1s) and a maximum likelihood estimator. It has been proved that the baseband estimation results can achieve a theoretical lower bound (CRLB). </p>
-                                    <p>A super-resolution snapshot GNSS SDR/receiver is practically available for future commercial markets.</p>
-                                </td>
-                            </tr>
+                            </tr>                      
                             <!-- 2021: luoIonGnss+ sra -->
                             <tr onmouseout="luoIonGnss2021a_stop()" onmouseover="luoIonGnss2021a_start()">
                                 <td style="padding:5px;width:25%;vertical-align:middle;">
@@ -340,7 +340,44 @@
                     <p> (to be completed ...) </p>
                     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                         <tbody>
-                            <!-- 2023: luoArxiv2023a -->
+                            <!-- 2023: luoIonPlans abs acc -->
+                            <tr onmouseout="luoIonPlans2023_stop()" onmouseover="luoIonPlans2023_start()">
+                                <td style="padding:5px;width:25%;vertical-align:middle;">
+                                    <div class="one">
+                                        <div class="two" id='luoIonPlans2023_image'>
+                                            <img src='images/research/luoIonPlans2023_after.png' width="160">
+                                        </div>
+                                        <img src='images/research/luoIonPlans2023_before.png' width="160">
+                                    </div>
+                                    <script type="text/javascript">
+                                    function luoIonPlans2023_start() {
+                                        document.getElementById('luoIonPlans2023_image').style.opacity = "1";
+                                    }
+
+                                    function luoIonPlans2023_stop() {
+                                        document.getElementById('luoIonPlans2023_image').style.opacity = "0";
+                                    }
+                                    luoIonPlans2023_stop()
+                                    </script>
+                                </td>
+                                <td style="padding:5px;width:75%;vertical-align:middle">
+                                    <a href="https://www.ion.org/publications/abstract.cfm?articleID=18816">
+                                        <papertitle>Super-Resolution GPS Receiver: User’s Acceleration Computation</papertitle>
+                                    </a>
+                                    <br>
+                                    <strong>Yiran Luo </strong>,
+                                    <a href="https://scholar.google.com/citations?user=GxfOCUMAAAAJ&hl=en&oi=ao" class="">Li-Ta Hsu</a> (Presenter),
+                                    <a href="http://schulich.ucalgary.ca/profiles/naser-el-sheimy" class="">Naser El-Sheimy</a>
+                                    <br>
+                                    <em>IEEE/ION PLANS</em>, 2023 &nbsp <font color="red"><strong>(Oral Presentation, Best Technical Paper in Track)</strong></font>
+                                    <br>                                                                  
+                                    [<a href="data/luoIonPlans2023.bib"><u>bibtex</u></a>]
+                                    <p></p>
+                                    <p>Based on our proposed standalone super-resolution GNSS receiver architecture, for the first time, we resolved user's absolute acceleration and clock drift rate solutions (FYI: the classic approaches including estimating a. position + clock bias, b. velocity and clock drift).  </p> 
+                                    <p>We used 1-s super-long coherent integration and snapshot baseband processing, where the nuisance problems, i.e., Doppler frequency migration (DFM) and quadratic range migration (QRM), has been addressed with the digital fractional Fourier transform and keystone transform, respectively. </p>
+                                </td>
+                            </tr>
+                            <!-- 2023: luoRs2023 -->
                             <tr onmouseout="luoArxiv2023a_stop()" onmouseover="luoArxiv2023a_start()">
                                 <td style="padding:5px;width:25%;vertical-align:middle">
                                     <div class="one">
@@ -446,7 +483,7 @@
                                         <papertitle>An Absolute-Position-Aided Code Discriminator Towards GNSS Receivers for Multipath Mitigation</papertitle>
                                     </a>
                                     <br>
-                                    <strong>Yiran Luo</strong>,
+                                    <strong>Yiran Luo (Presenter)</strong>,
                                     <a href="https://scholar.google.com/citations?user=GxfOCUMAAAAJ&hl=en&oi=ao" class="">Li-Ta Hsu</a>,
                                     <a href="https://sites.google.com/site/yanxiang0212/" class="">Yan Xiang</a>,
                                     <a href="https://pbingxu.github.io/" class="">Bing Xu</a>,
@@ -486,7 +523,7 @@
                                         <papertitle>Performance of Carrier-Based High-Precision Positioning Aided by a Vector Tracking Technique for Land Vehicle Navigation</papertitle>
                                     </a>
                                     <br>
-                                    <strong>Yiran Luo</strong>,
+                                    <strong>Yiran Luo (Presenter)</strong>,
                                     <a href="http://www.radarlab.cn/TeacherView.Asp?ID=164" class="">Jian Li</a>,
                                     <a href="https://scholar.google.com/citations?user=0DtGoYMAAAAJ&hl=en" class="">Chunyang Yu</a>,
                                     Jin Wang,
@@ -525,7 +562,7 @@
                                         <papertitle>A GNSS software-defined receiver with vector tracking techniques for land vehicle navigation</papertitle>
                                     </a>
                                     <br>
-                                    <strong>Yiran Luo</strong>,
+                                    <strong>Yiran Luo (Presenter)</strong>,
                                     <a href="http://www.radarlab.cn/TeacherView.Asp?ID=164" class="">Jian Li</a>,
                                     <a href="https://scholar.google.com/citations?user=0DtGoYMAAAAJ&hl=en" class="">Chunyang Yu</a>,
                                     Zhitao Lyu, Zhe Yue,
