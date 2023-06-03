@@ -214,7 +214,46 @@
                                     <p>We propose an unassisted GPS L5 SDR to achieve super-resolution (SR) positioning in a highly challenging scenario of the real world. The proposed technique leverages super-long correlation (>1s) in the time-frequency domain to produce an SR Doppler frequency through which a dead reckoning approach for high-accuracy code phase estimation is achieved with a numerically controlled oscillator resisting versatile multipath rays caused by the obstacles in urban cayons. </p>
                                     <p>In the near future, a new super-resolution GNSS SDR/receiver can independently achieve decimeter- or centimeter-level positioning and (sub-) nanosecond timing.</p>
                                 </td>
-                            </tr>                      
+                            </tr>  
+                            <!-- 2022: luoCSNC2022 lci+gft -->
+                            <tr onmouseout="luoCsnc2022_stop()" onmouseover="luoCsnc2022_start()">
+                                <td style="padding:5px;width:25%;vertical-align:middle;">
+                                    <div class="one">
+                                        <div class="two" id='luoCsnc2022_image'>
+                                            <video width=100% height=100% muted autoplay loop>
+                                                <source src="images/research/luoCsnc2022_after.mp4" type="video/mp4">
+                                                Your browser does not support the video tag.
+                                            </video>
+                                        </div>
+                                        <img src='images/research/luoCsnc2022_1.png' width="160">
+                                    </div>
+                                    <script type="text/javascript">
+                                    function luoCsnc2022_start() {
+                                        document.getElementById('luoCsnc2022_image').style.opacity = "1";
+                                    }
+
+                                    function luoCsnc2022_stop() {
+                                        document.getElementById('luoCsnc2022_image').style.opacity = "0";
+                                    }
+                                    luoCsnc2022_stop()
+                                    </script>
+                                </td>
+                                <td style="padding:5px;width:75%;vertical-align:middle">
+                                    <a href="resume.html#luoCsnc2022">
+                                        <papertitle>3D Visualization of Indoor GPS L5Q Baseband Signal and Its Long-Coherent De-noising Using Graph Fourier Transform</papertitle>
+                                    </a>
+                                    <br>
+                                    <strong>Yiran Luo</strong>,
+                                    <a href="http://schulich.ucalgary.ca/profiles/naser-el-sheimy" class="">Naser El-Sheimy</a>
+                                    <br>
+                                    <em>CSNC</em>, 2022 
+                                    <br>
+                                    [<a href="https://drive.google.com/file/d/1Q1gkquBla60GiIP5A0QDF58BpeowKmIU/view?usp=share_link" class=""><u>paper</u></a>]
+                                    [<a href="data/luoCsnc2022.bib"><u>bibtex</u></a>]
+                                    <p></p>
+                                    <p>We proposed a GNSS baseband graph that can be visualized within a 3D domain; then, we used GPS L5 pilot signals, an extended coherent integration technique, and graph signal processing (GSP) to de-noise the proposed graph. The real-world indoor signals have been experimented with, and the results verified the proposed algorithms efficiently improved the multipath mitigation and signal estimation accuracy. </p>
+                                </td>
+                            </tr>                    
                             <!-- 2021: luoIonGnss+ sra -->
                             <tr onmouseout="luoIonGnss2021a_stop()" onmouseover="luoIonGnss2021a_start()">
                                 <td style="padding:5px;width:25%;vertical-align:middle;">
