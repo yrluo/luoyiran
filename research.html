@@ -586,6 +586,46 @@
                     <p> (to be completed ...) </p>
                     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                         <tbody>
+
+                            <!-- 2022: luoIonGnss gft filtering -->
+                            <tr onmouseout="luoIonGnss2022_stop()" onmouseover="luoIonGnss2022_start()">
+                                <td style="padding:5px;width:25%;vertical-align:middle;">
+                                    <div class="one">
+                                        <div class="two" id='luoIonGnss2022_image'>
+                                            <img src='images/research/luoIonGnss2022_after.png' width="160">
+                                        </div>
+                                        <img src='images/research/luoIonGnss2022_before.png' width="160">
+                                    </div>
+                                    <script type="text/javascript">
+                                    function luoIonGnss2022_start() {
+                                        document.getElementById('luoIonGnss2022_image').style.opacity = "1";
+                                    }
+
+                                    function luoIonGnss2022_stop() {
+                                        document.getElementById('luoIonGnss2022_image').style.opacity = "0";
+                                    }
+                                    luoIonGnss2022_stop()
+                                    </script>
+                                </td>
+                                <td style="padding:5px;width:75%;vertical-align:middle">
+                                    <a href="https://doi.org/10.33012/2022.18397">
+                                        <papertitle>Improving GNSS Positioning by De-noising Consecutive Correlator Outputs Using Graph Fourier Transform Filtering</papertitle>
+                                    </a>
+                                    <br>
+                                    <strong>Yiran Luo (Presenter)</strong>,
+                                    <a href="http://schulich.ucalgary.ca/profiles/naser-el-sheimy" class="">Naser El-Sheimy</a>
+                                    <br>
+                                    <em>ION GNSS+</em>, 2022 &nbsp <font color="red"><strong>(Online Presentation)</strong></font>
+                                    <br>
+                                    [<a href="https://drive.google.com/file/d/1iiI-0BmdMnrWl8GGTW9DkTJpot5xQPe2/view?usp=sharing" class=""><u>paper</u></a>]
+                                    [<a href="data/luoIonGnss2022.bib"><u>bibtex</u></a>]
+                                    <p></p>
+                                    <p>
+                                        We used the graph Fourier transform to directly de-noise the complex correlator outputs in challenging environments. As a result, within a 200-ms time window for 1-ms coherent correlation, the 3D DGPS positioning accuracy has proved to be improved by 65.3% compared to the old algorithm. 
+                                    </p>
+                                </td>
+                            </tr>
+
                             <!-- 2019: luoRs2019 -->
                             <tr onmouseout="luoRs2019_stop()" onmouseover="luoRs2019_start()">
                                 <td style="padding:5px;width:25%;vertical-align:middle;">
@@ -624,9 +664,10 @@
                                     [<a href="https://www.mdpi.com/2072-4292/11/9/1026/htm" class=""><u>paper</u></a>]
                                     [<a href="data/luoRs2019.bib"><u>bibtex</u></a>]
                                     <p></p>
-                                    <p>A statistical analysis based on the Allan variance is proposed to model the clock error as a 1-st order GM process in a vector-tracking GNSS SDR. The improved model is achieved via an EKF. Real-world kinematic field tests verified that the RTK positioning accuracy of the proposed vector GNSS SDR exceeds the commercial low-cost u-Blox receiver by 21.4%.</p>
+                                    <p>A stochastic analysis based on the Allan variance is proposed to model the clock error as a 1-st order GM process in a vector-tracking GNSS SDR. The improved model is achieved via an EKF. Real-world kinematic field tests verified that the RTK positioning accuracy of the proposed vector GNSS SDR exceeds the commercial low-cost u-Blox receiver by 21.4%.</p>
                                 </td>
                             </tr>
+
                         </tbody>
                     </table>
                 </div>
