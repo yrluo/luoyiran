@@ -1,24 +1,16 @@
-Dr. Yiran Luo is currently a Postdoctoral Associate at the Mobile Multi-Sensors 
-Systems (MMSS) Research Team , the Department of Geomatics Engineering, 
-University of Calgary (UofC) , Calgary, Canada, where she received the Ph.D. 
-degree in 2020; she also obtained the Ph.D. degree with the School of Information 
-and Electronics, Beijing Institute of Technology (BIT), Beijing, China, in the same 
-year.
+Dr. Yiran Luo is a Postdoctoral Associate at the Mobile Multi-Sensors 
+Systems Research Team, Department of Geomatics Engineering, 
+University of Calgary, Calgary, Canada, where she received her Ph.D. 
+degree in 2020; she also obtained her Ph.D. degree from the School 
+of Information and Electronics, Beijing Institute of Technology, 
+Beijing, China, in the same year. From 2020 to 2021, she was a 
+Postdoctoral Fellow at the Intelligent Positioning and Navigation 
+Laboratory of the Department of Aeronautical and Aviation Engineering, 
+The Hong Kong Polytechnic University. 
 
-From 2020 to 2021, she was a Postdoctoral Fellow at the Intelligent Positioning 
-and Navigation Laboratory (IPNL) of the Department of Aeronautical and Aviation 
-Engineering, The Hong Kong Polytechnic University (PolyU), Hong Kong SAR, 
-China. She was also research assistants at the MMSS Research Team of the UofC, 
-and at the Radar Research Lab of the BIT.
-
-She has over eight-year experience in GNSS, especially in GNSS signal processing 
-and its software-defined radio (SDR) design. She is super passionate about 
-everything Global Navigation Satellite System (GNSS) and is open to collaboration.
-
-Her research interests include advanced GNSS SDR design, super-resolution (SR) 
-GNSS signal processing and remote sensing, and urban/indoor positioning and 
-navigation.
-
-She has developed several software platforms such as ultra-tightly coupled 
-GNSS/INS integration system, RTK-position-aided vector GNSS SDR, super-
-resolution GNSS SDR.
+Dr. Luo has ten years of experience in the Global Navigation Satellite 
+System (GNSS), exhaustively in GNSS signal processing and receiver 
+design. She is the inventor of Autonomous GNSS Accelerometer and is 
+super passionate about everything GNSS. Her research expertise includes 
+Autonomous Super-Resolution GNSS Accelerometer, Advanced Low-Power GNSS
+Integrated Circuits (ICs)/Modules, and Innovative GNSS Technology. 
