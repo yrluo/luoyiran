@@ -66,9 +66,9 @@
                     <a href="#conference" class="w3-bar-item w3-margin-top-0 w3-center w3-text-black w3-hover-text-amber" style="font-size: 80%; font-weight: lighter;" id='conferenceNav'>
                         Conference
                     </a>
-                    <a href="#patent" class="w3-bar-item w3-margin-top-0 w3-center w3-text-black w3-hover-text-amber" style="font-size: 80%; font-weight: lighter;" id='patentNav'>
+  <!--                   <a href="#patent" class="w3-bar-item w3-margin-top-0 w3-center w3-text-black w3-hover-text-amber" style="font-size: 80%; font-weight: lighter;" id='patentNav'>
                         Patent
-                    </a>
+                    </a> -->
                     <!--  <a href="#academicActivities" class="w3-bar-item w3-margin-top-0 w3-center w3-text-black w3-hover-text-amber" style="font-size: 80%; font-weight: lighter;" id='ellipsisNav'>
                             ...
                         </a> -->
@@ -354,14 +354,13 @@
                 </ul>
             </div>
             <!---PATENT SECTION-->
-            <div id="patent" class="w3-container w3-margin-top-2 w3-cursive">
+            <!-- <div id="patent" class="w3-container w3-margin-top-2 w3-cursive">
                 <h3 class="w3-border-amber">PATENTS</h3>
                 <ul class="w3-ul" style="font-weight: 450;">
-                    <li><a href="http://www.radarlab.cn/TeacherView.Asp?ID=164" class="">Li, J.</a>, Liu, X., Liu, F., <b><u>Luo, Y.</u></b>, Hao Z. (<b>2022</b>). "GNSS anti-deception jamming method based on multiple receivers." CN Patent No. 112882068B. </li>
                     <li><a href="http://www.radarlab.cn/TeacherView.Asp?ID=164" class="">Li, J.</a>, Xu, T., Liu, F., <b><u>Luo, Y.</u></b>, Hao, Z. (<b>2021</b>). "Satellite navigation dual-frequency cycle slip detection method based on random forest." CN Patent Application No. 112327336A. Pending.</li>
                     
                 </ul>
-            </div>
+            </div> -->
             <!---OTHER ACADEMIC ACTIVITIES-->
             <div id="academicActivities" class="w3-container w3-margin-top-2 w3-cursive">
                 <h3 class="w3-border-amber">OTHER ACADEMIC ACTIVITIES</h3>
@@ -377,8 +376,10 @@
             <div id="socialWork" class="w3-container w3-margin-top-2 w3-cursive">
                 <h3 class="w3-border-amber">SOCIAL WORK</h3>
                 <ul class="w3-ul" style="font-weight: 500;">
-                    <li><b>Reviewer: </b> IEEE Journals (e.g., TAES, TIE, CL, WCL, OJCOMS), NAVIGATION, Satellite Navigation, MDPI journals (e.g., Remote Sensing, Sensors, Micromachines), etc. </li>
-                    <li><b>Membership: </b>member of Institute of Electrical and Electronics Engineers (IEEE) </li>
+                    <li><b>Journal Editor: </b> <a href="https://www.frontiersin.org/journals/signal-processing">Frontiers in Signal Processing</a> </li>
+                    <li><b>Committee Member: </b> <a href="https://www.ieee.ca/en/wie/">IEEE Canada Women in Engineering (WIE)</a> </li>
+                    <li><b>Reviewer: </b> IEEE Journals (e.g., <a href="https://ieee-aess.org/publications/taes">TAES</a>, <a href="https://www.ieee-ies.org/pubs/transactions-on-industrial-electronics">TIE</a>, <a href="https://www.comsoc.org/publications/journals/ieee-comml">COMML</a>, <a href="https://www.comsoc.org/publications/journals/ieee-wcl">WCL</a>, <a href="https://www.comsoc.org/publications/journals/ieee-ojcoms">OJCOMS</a>), <a href="https://navi.ion.org/">NAVIGATION</a>, <a href="https://satellite-navigation.springeropen.com/">Satellite Navigation</a>, <a href="https://www.mdpi.com/">MDPI journals</a> (e.g., Remote Sensing, Sensors, Micromachines), etc. </li>
+                    <li><b>Membership: </b>professional member of Institute of Navigation (ION), member of Institute of Electrical and Electronics Engineers (IEEE), member of IEEE Women In Engineering </li>
                 </ul>
             </div>
             <!--SKILLS SECTION-->
@@ -520,7 +521,7 @@
             const academicAwardsNav = document.getElementById("academicAwardsNav").classList;
             const journalNav = document.getElementById("journalNav").classList;
             const conferenceNav = document.getElementById("conferenceNav").classList;
-            const patentNav = document.getElementById("patentNav").classList;
+            // const patentNav = document.getElementById("patentNav").classList;
             const academicActivitiesNav = document.getElementById("academicActivitiesNav").classList;
             // const socialWorkNav = document.getElementById("socialWorkNav").classList;
             // const skillsNav1 = document.getElementById("skillsNav1").classList;
@@ -558,13 +559,13 @@
             } else if (winScroll >= conferenceHeight && winScroll < patentHeight) {
                 journalNav.replace("w3-text-amber", "w3-text-black");
                 conferenceNav.replace("w3-text-black", "w3-text-amber");
-                patentNav.replace("w3-text-amber", "w3-text-black");
+                // patentNav.replace("w3-text-amber", "w3-text-black");
                 academicActivitiesNav.replace("w3-text-amber", "w3-text-black");
 
                 // } else if (winScroll >= patentHeight && winScroll < academicActivitiesHeight) {
             } else if (winScroll >= patentHeight) {
                 conferenceNav.replace("w3-text-amber", "w3-text-black");
-                patentNav.replace("w3-text-black", "w3-text-amber");
+                // patentNav.replace("w3-text-black", "w3-text-amber");
                 academicActivitiesNav.replace("w3-text-black", "w3-text-amber");
 
                 // academicActivitiesNav.replace("w3-text-amber", "w3-text-black");
@@ -590,7 +591,7 @@
                 academicAwardsNav.replace("w3-text-amber", "w3-text-black");
                 journalNav.replace("w3-text-amber", "w3-text-black");
                 conferenceNav.replace("w3-text-amber", "w3-text-black");
-                patentNav.replace("w3-text-amber", "w3-text-black");
+                // patentNav.replace("w3-text-amber", "w3-text-black");
                 // academicActivitiesNav.replace("w3-text-amber", "w3-text-black");
                 // socialWorkNav.replace("w3-text-amber", "w3-text-black");
                 // skillsNav1.replace("w3-text-amber", "w3-text-black");
